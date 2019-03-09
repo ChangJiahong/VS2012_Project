@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Stu_CJBDataSet" targetNamespace="http://tempuri.org/Stu_CJBDataSet.xsd" xmlns:mstns="http://tempuri.org/Stu_CJBDataSet.xsd" xmlns="http://tempuri.org/Stu_CJBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="StudentConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="StudentConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.学生综合测评管理系统.Properties.Settings.GlobalReference.Default.StudentConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Stu_CJBTableAdapter" GeneratorDataComponentClassName="Stu_CJBTableAdapter" Name="Stu_CJB" UserDataComponentName="Stu_CJBTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StudentConnectionString (Settings)" DbObjectName="Student.dbo.Stu_CJB" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 学号, 姓名, 系别, 专业, 课程号, 课程名, 考试成绩, 总学分, 实修学分 FROM dbo.Stu_CJB</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="学号" DataSetColumn="学号" />
+              <Mapping SourceColumn="姓名" DataSetColumn="姓名" />
+              <Mapping SourceColumn="系别" DataSetColumn="系别" />
+              <Mapping SourceColumn="专业" DataSetColumn="专业" />
+              <Mapping SourceColumn="课程号" DataSetColumn="课程号" />
+              <Mapping SourceColumn="课程名" DataSetColumn="课程名" />
+              <Mapping SourceColumn="考试成绩" DataSetColumn="考试成绩" />
+              <Mapping SourceColumn="总学分" DataSetColumn="总学分" />
+              <Mapping SourceColumn="实修学分" DataSetColumn="实修学分" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Stu_CJBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Stu_CJBDataSet" msprop:Generator_UserDSName="Stu_CJBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Stu_CJB" msprop:Generator_TableClassName="Stu_CJBDataTable" msprop:Generator_TableVarName="tableStu_CJB" msprop:Generator_TablePropName="Stu_CJB" msprop:Generator_RowDeletingName="Stu_CJBRowDeleting" msprop:Generator_RowChangingName="Stu_CJBRowChanging" msprop:Generator_RowEvHandlerName="Stu_CJBRowChangeEventHandler" msprop:Generator_RowDeletedName="Stu_CJBRowDeleted" msprop:Generator_UserTableName="Stu_CJB" msprop:Generator_RowChangedName="Stu_CJBRowChanged" msprop:Generator_RowEvArgName="Stu_CJBRowChangeEvent" msprop:Generator_RowClassName="Stu_CJBRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="学号" msprop:Generator_ColumnVarNameInTable="column学号" msprop:Generator_ColumnPropNameInRow="学号" msprop:Generator_ColumnPropNameInTable="学号Column" msprop:Generator_UserColumnName="学号">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="姓名" msprop:Generator_ColumnVarNameInTable="column姓名" msprop:Generator_ColumnPropNameInRow="姓名" msprop:Generator_ColumnPropNameInTable="姓名Column" msprop:Generator_UserColumnName="姓名">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="系别" msprop:Generator_ColumnVarNameInTable="column系别" msprop:Generator_ColumnPropNameInRow="系别" msprop:Generator_ColumnPropNameInTable="系别Column" msprop:Generator_UserColumnName="系别" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="专业" msprop:Generator_ColumnVarNameInTable="column专业" msprop:Generator_ColumnPropNameInRow="专业" msprop:Generator_ColumnPropNameInTable="专业Column" msprop:Generator_UserColumnName="专业" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="课程号" msprop:Generator_ColumnVarNameInTable="column课程号" msprop:Generator_ColumnPropNameInRow="课程号" msprop:Generator_ColumnPropNameInTable="课程号Column" msprop:Generator_UserColumnName="课程号">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="课程名" msprop:Generator_ColumnVarNameInTable="column课程名" msprop:Generator_ColumnPropNameInRow="课程名" msprop:Generator_ColumnPropNameInTable="课程名Column" msprop:Generator_UserColumnName="课程名">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="考试成绩" msprop:Generator_ColumnVarNameInTable="column考试成绩" msprop:Generator_ColumnPropNameInRow="考试成绩" msprop:Generator_ColumnPropNameInTable="考试成绩Column" msprop:Generator_UserColumnName="考试成绩" type="xs:int" minOccurs="0" />
+              <xs:element name="总学分" msprop:Generator_ColumnVarNameInTable="column总学分" msprop:Generator_ColumnPropNameInRow="总学分" msprop:Generator_ColumnPropNameInTable="总学分Column" msprop:Generator_UserColumnName="总学分" type="xs:int" minOccurs="0" />
+              <xs:element name="实修学分" msprop:Generator_ColumnVarNameInTable="column实修学分" msprop:Generator_ColumnPropNameInRow="实修学分" msprop:Generator_ColumnPropNameInTable="实修学分Column" msprop:Generator_UserColumnName="实修学分" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,15 @@
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\bin\Debug\学生综合测评管理系统.exe.config
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\bin\Debug\学生综合测评管理系统.exe
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\bin\Debug\学生综合测评管理系统.pdb
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.csprojResolveAssemblyReference.cache
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.Login.resources
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.Properties.Resources.resources
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.csproj.GenerateResource.Cache
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.exe
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.pdb
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.Repassword.resources
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.Serach.resources
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.AdminMenu.resources
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.ItemShow.resources
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.TeaMenu.resources
+E:\VS2012_Project\学生综合测评管理系统\学生综合测评管理系统\obj\Debug\学生综合测评管理系统.StuMenu.resources

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Tea_XXDataSet" targetNamespace="http://tempuri.org/Tea_XXDataSet.xsd" xmlns:mstns="http://tempuri.org/Tea_XXDataSet.xsd" xmlns="http://tempuri.org/Tea_XXDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="StudentConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="StudentConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.学生综合测评管理系统.Properties.Settings.GlobalReference.Default.StudentConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Tea_XXTableAdapter" GeneratorDataComponentClassName="Tea_XXTableAdapter" Name="Tea_XX" UserDataComponentName="Tea_XXTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="StudentConnectionString (Settings)" DbObjectName="Student.dbo.Tea_XX" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT 教师工号, 姓名, 性别, 年龄, 账号密码 FROM dbo.Tea_XX</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="教师工号" DataSetColumn="教师工号" />
+              <Mapping SourceColumn="姓名" DataSetColumn="姓名" />
+              <Mapping SourceColumn="性别" DataSetColumn="性别" />
+              <Mapping SourceColumn="年龄" DataSetColumn="年龄" />
+              <Mapping SourceColumn="账号密码" DataSetColumn="账号密码" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Tea_XXDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Tea_XXDataSet" msprop:Generator_UserDSName="Tea_XXDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Tea_XX" msprop:Generator_TableClassName="Tea_XXDataTable" msprop:Generator_TableVarName="tableTea_XX" msprop:Generator_TablePropName="Tea_XX" msprop:Generator_RowDeletingName="Tea_XXRowDeleting" msprop:Generator_RowChangingName="Tea_XXRowChanging" msprop:Generator_RowEvHandlerName="Tea_XXRowChangeEventHandler" msprop:Generator_RowDeletedName="Tea_XXRowDeleted" msprop:Generator_UserTableName="Tea_XX" msprop:Generator_RowChangedName="Tea_XXRowChanged" msprop:Generator_RowEvArgName="Tea_XXRowChangeEvent" msprop:Generator_RowClassName="Tea_XXRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="教师工号" msprop:Generator_ColumnVarNameInTable="column教师工号" msprop:Generator_ColumnPropNameInRow="教师工号" msprop:Generator_ColumnPropNameInTable="教师工号Column" msprop:Generator_UserColumnName="教师工号">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="姓名" msprop:Generator_ColumnVarNameInTable="column姓名" msprop:Generator_ColumnPropNameInRow="姓名" msprop:Generator_ColumnPropNameInTable="姓名Column" msprop:Generator_UserColumnName="姓名">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="性别" msprop:Generator_ColumnVarNameInTable="column性别" msprop:Generator_ColumnPropNameInRow="性别" msprop:Generator_ColumnPropNameInTable="性别Column" msprop:Generator_UserColumnName="性别">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="年龄" msprop:Generator_ColumnVarNameInTable="column年龄" msprop:Generator_ColumnPropNameInRow="年龄" msprop:Generator_ColumnPropNameInTable="年龄Column" msprop:Generator_UserColumnName="年龄" type="xs:int" />
+              <xs:element name="账号密码" msprop:Generator_ColumnVarNameInTable="column账号密码" msprop:Generator_ColumnPropNameInRow="账号密码" msprop:Generator_ColumnPropNameInTable="账号密码Column" msprop:Generator_UserColumnName="账号密码">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Tea_XX" />
+      <xs:field xpath="mstns:教师工号" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
